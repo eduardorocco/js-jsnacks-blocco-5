@@ -3,17 +3,15 @@ const nums = [2, 8, 4, 7, 12, 87];
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
 
 
-numberType = nums.find((num) =>{
+const evenNumbers = nums.filter((num) => {
 
-    if(num % 2 === 0){
+    if(num % 2 === 0) {
+        
+        return true
+    }
 
-        even.push(`${num} é Pari`)
-
-    } else
-
-        odd.push(`${num} é dispari`)
-    
+    return false
 })
 
-console.log(numeriPari, numeriDispari)
+console.log(evenNumbers)
 // Risultato: [2, 8, 4, 12]
